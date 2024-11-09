@@ -1,0 +1,7 @@
+.img-bg
+{
+    background-image: url('../../assets/Img/Offers/Offers-img.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: max-content;
+}
