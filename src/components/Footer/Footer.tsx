@@ -37,16 +37,16 @@ export default function Footer({logo, dataF , Social , copy} : data) {
         <Image
         src={logo}
         alt="logo"
-        className="mb-[33px]"
+        className="2xl:mb-[33px] mb-5"
         />
       </div>
-      <div className="py-[33px] text-white flex justify-between gap-[93.7px] border-y 	">
+      <div className="2xl:py-[33px] py-5 text-white 2xl:flex-nowrap flex-wrap flex justify-between 2xl:gap-[93.7px] gap-5 border-y 	">
             {dataF.map((e,i) => (
                 <div key={i}>
-                    <h3 className=" text-xl font-extrabold mb-5">{e.title}</h3>
+                    <h3 className=" 2xl:text-xl text-lg font-extrabold mb-5">{e.title}</h3>
                     <ul >
                         {e.list.map((e,i)=>(
-                            <li key={i} className="flex text-lg mb-2.5 items-center font-semibold gap-2.5">
+                            <li key={i} className="flex 2xl:text-lg text-sm mb-2.5 items-center font-semibold gap-2.5">
                                 {e.icon}
                                 <Link href={e.path}>{e.li}</Link>
                             </li>
@@ -59,7 +59,7 @@ export default function Footer({logo, dataF , Social , copy} : data) {
                     <h3 className=" text-center text-xl font-extrabold mb-5">{e.title}</h3>
                     <ul className="flex gap-5">
                         {e.socialIcon.map((e,i) => (
-                            <li className="w-[50px] h-[50px] rounded-full bg-[#FA8B02] flex justify-center items-center text-[#333333]">
+                            <li className="phone:w-[50px] phone:h-[50px] w-[25px] h-[25px] rounded-full bg-[#FA8B02] flex justify-center items-center text-[#333333]">
                                 <a href={e.path}>{e.icon}</a>
                             </li>
                         ))}
@@ -67,7 +67,7 @@ export default function Footer({logo, dataF , Social , copy} : data) {
                 </div>
             ))}
       </div>
-      <div className=" text-white text-center py-10">
+      <div className=" text-white text-center 2xl:py-10 py-5">
         <h3 className=" text-base font-normal">{copy}</h3>
       </div>
       

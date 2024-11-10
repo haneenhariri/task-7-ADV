@@ -27,7 +27,7 @@ const config: Config = {
         "laptop" : '1200px',
         "tablet" : '992px',
         "m-tablet" : '768px',
-        "phone" : '576',
+        "phone" : '576px',
 
       }
     },

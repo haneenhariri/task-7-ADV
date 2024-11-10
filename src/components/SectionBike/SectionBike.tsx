@@ -11,15 +11,15 @@ interface bikeData
 
 export default function SectionBike({bikeImg , titleB} : bikeData) {
   return (
-    <section className='flex  justify-between  bike px-[13.021%]'>
-      <div className='self-start w-1/2 mt-[60px]'>
-        <h2 className='text-center text-[32px] font-extrabold' >{titleB}</h2> 
+    <section className=' relative tablet:flex  justify-between  bike px-[13.021%]'>
+      <div className='self-start tablet:w-1/2 w-full tablet:mt-[60px] tablet:mb-0 my-5 '>
+        <h2 className='text-center 2xl:text-[32px] tablet:mt-0 mt-5 text-2xl font-extrabold' >{titleB}</h2> 
         <Form data={form} btnF='Book Now'/>
       </div>
       <Image
        src={bikeImg}
        alt='bike'
-       className=' self-end h-[542px] w-[50.985%]'
+       className=' self-end 2xl:h-[542px] 2xl:w-[50.985%] w-1/2 m-tablet:block  hidden'
       />
     </section>
   )

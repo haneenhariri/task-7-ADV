@@ -14,21 +14,21 @@ interface dtatForm
 }
 export default function Form({data , btnF} : dtatForm) {
   return (
-    <form className="p-[30px] rounded-3xl bg-white/30 mt-9">
+    <form className="2xl:p-[30px] p-4 rounded-3xl bg-white/30 2xl:mt-9 mt-5">
       {data.map((e,i) => (
-        <div className="flex w-full justify-between gap-[30px]">
-            <div className=" w-1/2 mb-[30px]">
-                <label className=" text-lg font-semibold mb-2 block" htmlFor="">{e.label}</label>
-                <input className="py-3.5 rounded-lg px-6 w-full" placeholder={e.place} type={e.type} />
+        <div className="m-tablet:flex w-full justify-between 2xl:gap-[30px] m-tablet:gap-2">
+            <div className=" m-tablet:w-1/2 m-tablet:mb-[30px] mb-2">
+                <label className=" 2xl:text-lg text-sm font-semibold mb-2 block" htmlFor="">{e.label}</label>
+                <input className="2xl:py-3.5 p-2  rounded-lg 2xl:px-6 w-full 2xl:placeholder:text-lg placeholder:text-sm" placeholder={e.place} type={e.type} />
             </div>
-            <div className=" w-1/2 mb-[30px]" >
-                <label className="text-lg font-semibold mb-2 block" htmlFor="">{e.labe2}</label>
-                <input  className="py-3.5 rounded-lg  px-6 w-full"  placeholder={e.place2} type={e.type2} />
+            <div className=" m-tablet:w-1/2 m-tablet:mb-[30px] mb-2" >
+                <label className="2xl:text-lg text-sm  font-semibold mb-2 block" htmlFor="">{e.labe2}</label>
+                <input  className="2xl:py-3.5 p-2 rounded-lg  2xl:px-6 w-full 2xl:placeholder:text-lg placeholder:text-sm"  placeholder={e.place2} type={e.type2} />
             </div>
         </div>
       ))}
       <div  className=" text-center">
-      <button className="w-[212px] bg-[#FA8B02] text-xl font-semibold text-white rounded-full py-2.5 bx-[24px] ">{btnF}</button>
+      <button className="w-[212px] bg-[#FA8B02] 2xl:text-xl text-base font-semibold text-white rounded-full py-2.5 bx-[24px] ">{btnF}</button>
       </div>
       
     </form>

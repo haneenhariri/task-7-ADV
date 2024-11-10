@@ -9,16 +9,13 @@ interface PopularData
 export default function Popular({titleP} : PopularData) {
   return (
     <section className="pt-[6.25%] px-[13.021%]">
-      <h2 className="text-[32px] font-extrabold mb-[60px]">
+      <h2 className="2xl:text-[32px] text-2xl font-extrabold mb-[60px]">
         {titleP}
       </h2>
-      <div className="flex  justify-between">
-
+      <div className="flex 2xl:gap-5 laptop:flex-nowrap flex-wrap laptop:gap-2.5 gap-3 justify-between">
       <PopularCard
        dataP={PopularData}
       />
-
-
       </div>
 
     </section>

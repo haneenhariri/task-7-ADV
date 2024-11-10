@@ -16,17 +16,17 @@ export default function HeadSlider({
     goToPrevious,}: HeadSliderProps) 
 {
   return (
-    <div className="flex justify-between items-center mb-[57px]">
-      <h2 className=" text-[32px] font-extrabold">{title}</h2>
-      <div className="flex gap-5">
+    <div className="flex justify-between md:flex-nowrap flex-wrap gap-y-2 items-center mb-[57px]">
+      <h2 className=" 2xl:text-[32px] md:text-2xl text-lg font-extrabold">{title}</h2>
+      <div className="flex md:gap-5 gap-1 ">
           <button
-            className="bg-[#EFEFEF] text-[#333333]  w-[50px] h-[50px]  rounded-full"
+            className="bg-[#EFEFEF] text-[#333333] p-2 flex justify-center items-center  md:w-[50px] md:h-[50px] w-[30px] h-[30px]  rounded-full"
             onClick={goToPrevious}
           >
             &#10094; 
           </button>
           <button
-            className="bg-[#FA8B02] text-white p-2  w-[50px] h-[50px]  rounded-full"
+            className="bg-[#FA8B02] text-white p-2 flex justify-center items-center  md:w-[50px] md:h-[50px] w-[30px] h-[30px]  rounded-full"
             onClick={goToNext}
           >
             &#10095; 

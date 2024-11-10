@@ -8,3 +8,17 @@
     margin-right: 12px;
     background-color: #333333;
 }
+
+@media (max-width:576px)
+{
+    .tab-content-item:not(:first-child)::before
+{
+    margin: auto;
+    content: '';
+    width: 1px;
+    height: 30px;
+    display: block;
+    margin-right: 2px;
+}
+
+}
